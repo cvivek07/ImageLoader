@@ -5,7 +5,7 @@ This app has two modules as given in problem statement:
  - imageloader // Image loading library written by me.
 
 
- imageloader module:
+ ## imageloader module:
 
  The imageloader module contains the classes related to the code used for developing the library.
  It has two packages:
@@ -15,7 +15,7 @@ This app has two modules as given in problem statement:
 
  Note: DiskCache uses a class DiskLruCache from the Jake wharton's lib 'com.jakewharton:disklrucache:2.0.2'
 
- app module:
+ ## app module:
 
  The app module follows a basic MVVM architecture.
 
@@ -34,19 +34,19 @@ This app has two modules as given in problem statement:
  6. viewmodel - Viewmodel for communicating with repo layers.
 
 
- The main picture:
+## The main picture:
 
  The imageloader library is used in PhotoViewHolder class.imageloader
 
- //        1. Using ImageLoader which uses MemoryCache.
-         ImageLoader.displayImage(data.urls.thumb, imageView)
+//        1. Using ImageLoader which uses MemoryCache.
+            ImageLoader.displayImage(data.urls.thumb, imageView)
 
 
- //        2. Using ImageLoader2 which uses DiskCache.
- //        ImageLoader2.displayImage(itemView.context, data.urls.thumb, imageView)
+//        2. Using ImageLoader2 which uses DiskCache.
+            ImageLoader2.displayImage(itemView.context, data.urls.thumb, imageView)
 
- //        3. For cancelling ongoing requests, you can call cancelAll()
- //        ImageLoader.cancelAll()
+//        3. For cancelling ongoing requests, you can call cancelAll().
+            ImageLoader.cancelAll()
 
 
  In fullscreenActivity, I have used ImageLoader2 which uses DiskCache

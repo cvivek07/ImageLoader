@@ -20,6 +20,8 @@ import org.kodein.di.KodeinAware
 import org.kodein.di.android.kodein
 import org.kodein.di.generic.instance
 
+
+// List images
 class MainActivity : AppCompatActivity(), KodeinAware, OnItemClickListener {
 
     companion object{

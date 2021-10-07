@@ -10,7 +10,7 @@ import com.greedygame.imageloader.model.photo.Photo
 
 class Adapter(
     list: List<Any>,
-    var listener: OnItemClickListener
+    private var listener: OnItemClickListener
 ) : GenericAdapter<Any>(list) {
     override fun getLayoutId(position: Int, obj: Any?): Int {
         return when (obj) {

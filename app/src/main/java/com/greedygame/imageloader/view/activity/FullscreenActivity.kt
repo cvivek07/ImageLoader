@@ -9,7 +9,7 @@ import com.greedygame.imageloader.diskcache.ImageLoader2
 import com.greedygame.imageloader.helper.constants.Constants
 import kotlinx.android.synthetic.main.activity_fullscreen.*
 
-
+// to display image full screen
 class FullscreenActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {

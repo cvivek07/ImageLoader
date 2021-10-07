@@ -16,11 +16,10 @@ class PhotoViewHolder(
     listener: OnItemClickListener?
 ) : RecyclerView.ViewHolder(itemView), GenericAdapter.Binder<Photo> {
 
-    var imageView: ImageView
-    var listener: OnItemClickListener? = null
+    private var imageView: ImageView = itemView.findViewById(R.id.imageView)
+    private var listener: OnItemClickListener? = null
 
     init {
-        imageView = itemView.findViewById(R.id.imageView)
         this.listener = listener
     }
 

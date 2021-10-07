@@ -38,14 +38,14 @@ This app has two modules as given in problem statement:
 
  The imageloader library is used in PhotoViewHolder class.imageloader
 
-//        1. Using ImageLoader which uses MemoryCache.
+1. Using ImageLoader which uses MemoryCache.
             ImageLoader.displayImage(data.urls.thumb, imageView)
 
 
-//        2. Using ImageLoader2 which uses DiskCache.
+2. Using ImageLoader2 which uses DiskCache.
             ImageLoader2.displayImage(itemView.context, data.urls.thumb, imageView)
 
-//        3. For cancelling ongoing requests, you can call cancelAll().
+3. For cancelling ongoing requests, you can call cancelAll().
             ImageLoader.cancelAll()
 
 
